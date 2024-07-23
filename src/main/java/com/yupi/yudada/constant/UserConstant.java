@@ -3,8 +3,6 @@ package com.yupi.yudada.constant;
 /**
  * 用户常量
  *
- * @author  
- * @from  
  */
 public interface UserConstant {
 

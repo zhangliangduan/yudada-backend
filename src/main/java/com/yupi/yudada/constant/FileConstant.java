@@ -3,8 +3,7 @@ package com.yupi.yudada.constant;
 /**
  * 文件常量
  *
- * @author
- * @from  
+
  */
 public interface FileConstant {
 

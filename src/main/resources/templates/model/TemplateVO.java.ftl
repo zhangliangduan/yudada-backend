@@ -61,8 +61,8 @@ public class ${upperDataKey}VO implements Serializable {
     /**
      * 封装类转对象
      *
-     * @param ${dataKey}VO
-     * @return
+      * ${dataKey}VO
+     *
      */
     public static ${upperDataKey} voToObj(${upperDataKey}VO ${dataKey}VO) {
         if (${dataKey}VO == null) {
@@ -78,8 +78,8 @@ public class ${upperDataKey}VO implements Serializable {
     /**
      * 对象转封装类
      *
-     * @param ${dataKey}
-     * @return
+      * ${dataKey}
+     *
      */
     public static ${upperDataKey}VO objToVo(${upperDataKey} ${dataKey}) {
         if (${dataKey} == null) {

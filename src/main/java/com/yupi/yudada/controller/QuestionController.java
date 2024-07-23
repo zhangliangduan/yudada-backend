@@ -40,8 +40,6 @@ import java.util.stream.Stream;
 /**
  * 题目接口
  *
- * @author
- * @from  
  */
 @RestController
 @RequestMapping("/question")
@@ -68,9 +66,6 @@ public class QuestionController {
     /**
      * 创建题目
      *
-     * @param questionAddRequest
-     * @param request
-     * @return
      */
     @PostMapping("/add")
     public BaseResponse<Long> addQuestion(@RequestBody QuestionAddRequest questionAddRequest, HttpServletRequest request) {
@@ -96,9 +91,6 @@ public class QuestionController {
     /**
      * 删除题目
      *
-     * @param deleteRequest
-     * @param request
-     * @return
      */
     @PostMapping("/delete")
     public BaseResponse<Boolean> deleteQuestion(@RequestBody DeleteRequest deleteRequest, HttpServletRequest request) {
@@ -123,8 +115,6 @@ public class QuestionController {
     /**
      * 更新题目（仅管理员可用）
      *
-     * @param questionUpdateRequest
-     * @return
      */
     @PostMapping("/update")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -152,8 +142,6 @@ public class QuestionController {
     /**
      * 根据 id 获取题目（封装类）
      *
-     * @param id
-     * @return
      */
     @GetMapping("/get/vo")
     public BaseResponse<QuestionVO> getQuestionVOById(long id, HttpServletRequest request) {
@@ -168,8 +156,6 @@ public class QuestionController {
     /**
      * 分页获取题目列表（仅管理员可用）
      *
-     * @param questionQueryRequest
-     * @return
      */
     @PostMapping("/list/page")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -185,9 +171,6 @@ public class QuestionController {
     /**
      * 分页获取题目列表（封装类）
      *
-     * @param questionQueryRequest
-     * @param request
-     * @return
      */
     @PostMapping("/list/page/vo")
     public BaseResponse<Page<QuestionVO>> listQuestionVOByPage(@RequestBody QuestionQueryRequest questionQueryRequest,
@@ -206,9 +189,6 @@ public class QuestionController {
     /**
      * 分页获取当前登录用户创建的题目列表
      *
-     * @param questionQueryRequest
-     * @param request
-     * @return
      */
     @PostMapping("/my/list/page/vo")
     public BaseResponse<Page<QuestionVO>> listMyQuestionVOByPage(@RequestBody QuestionQueryRequest questionQueryRequest,
@@ -231,9 +211,6 @@ public class QuestionController {
     /**
      * 编辑题目（给用户使用）
      *
-     * @param questionEditRequest
-     * @param request
-     * @return
      */
     @PostMapping("/edit")
     public BaseResponse<Boolean> editQuestion(@RequestBody QuestionEditRequest questionEditRequest, HttpServletRequest request) {
@@ -287,10 +264,6 @@ public class QuestionController {
     /**
      * 生成题目的用户消息
      *
-     * @param app
-     * @param questionNumber
-     * @param optionNumber
-     * @return
      */
     private String getGenerateQuestionUserMessage(App app, int questionNumber, int optionNumber) {
         StringBuilder userMessage = new StringBuilder();

@@ -3,8 +3,6 @@ package com.yupi.yudada.constant;
 /**
  * 通用常量
  *
- * @author  
- * @from  
  */
 public interface CommonConstant {
 

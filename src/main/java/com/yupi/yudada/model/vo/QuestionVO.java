@@ -15,8 +15,6 @@ import java.util.List;
 /**
  * 题目视图
  *
- * @author  
- * @from  
  */
 @Data
 public class QuestionVO implements Serializable {
@@ -58,8 +56,8 @@ public class QuestionVO implements Serializable {
     /**
      * 封装类转对象
      *
-     * @param questionVO
-     * @return
+      * questionVO
+     *
      */
     public static Question voToObj(QuestionVO questionVO) {
         if (questionVO == null) {
@@ -75,8 +73,8 @@ public class QuestionVO implements Serializable {
     /**
      * 对象转封装类
      *
-     * @param question
-     * @return
+      * question
+     *
      */
     public static QuestionVO objToVo(Question question) {
         if (question == null) {

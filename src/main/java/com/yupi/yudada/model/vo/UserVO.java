@@ -7,8 +7,6 @@ import lombok.Data;
 /**
  * 用户视图（脱敏）
  *
- * @author  
- * @from  
  */
 @Data
 public class UserVO implements Serializable {

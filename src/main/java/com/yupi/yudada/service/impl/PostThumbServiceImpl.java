@@ -18,8 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 帖子点赞服务实现
  *
- * @author  
- * @from  
  */
 @Service
 public class PostThumbServiceImpl extends ServiceImpl<PostThumbMapper, PostThumb>
@@ -31,9 +29,9 @@ public class PostThumbServiceImpl extends ServiceImpl<PostThumbMapper, PostThumb
     /**
      * 点赞
      *
-     * @param postId
-     * @param loginUser
-     * @return
+      * postId
+      * loginUser
+     *
      */
     @Override
     public int doPostThumb(long postId, User loginUser) {
@@ -55,9 +53,9 @@ public class PostThumbServiceImpl extends ServiceImpl<PostThumbMapper, PostThumb
     /**
      * 封装了事务的方法
      *
-     * @param userId
-     * @param postId
-     * @return
+      * userId
+      * postId
+     *
      */
     @Override
     @Transactional(rollbackFor = Exception.class)

@@ -36,8 +36,6 @@ import org.springframework.stereotype.Service;
 /**
  * 帖子服务实现
  *
- * @author  
- * @from  
  */
 @Service
 @Slf4j
@@ -76,8 +74,8 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements Po
     /**
      * 获取查询包装类
      *
-     * @param postQueryRequest
-     * @return
+      * postQueryRequest
+     *
      */
     @Override
     public QueryWrapper<Post> getQueryWrapper(PostQueryRequest postQueryRequest) {

@@ -30,8 +30,6 @@ import java.util.List;
 /**
  * 评分结果接口
  *
- * @author  
- * @from  
  */
 @RestController
 @RequestMapping("/scoringResult")
@@ -49,9 +47,6 @@ public class ScoringResultController {
     /**
      * 创建评分结果
      *
-     * @param scoringResultAddRequest
-     * @param request
-     * @return
      */
     @PostMapping("/add")
     public BaseResponse<Long> addScoringResult(@RequestBody ScoringResultAddRequest scoringResultAddRequest, HttpServletRequest request) {
@@ -77,9 +72,6 @@ public class ScoringResultController {
     /**
      * 删除评分结果
      *
-     * @param deleteRequest
-     * @param request
-     * @return
      */
     @PostMapping("/delete")
     public BaseResponse<Boolean> deleteScoringResult(@RequestBody DeleteRequest deleteRequest, HttpServletRequest request) {
@@ -104,8 +96,6 @@ public class ScoringResultController {
     /**
      * 更新评分结果（仅管理员可用）
      *
-     * @param scoringResultUpdateRequest
-     * @return
      */
     @PostMapping("/update")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -133,8 +123,6 @@ public class ScoringResultController {
     /**
      * 根据 id 获取评分结果（封装类）
      *
-     * @param id
-     * @return
      */
     @GetMapping("/get/vo")
     public BaseResponse<ScoringResultVO> getScoringResultVOById(long id, HttpServletRequest request) {
@@ -149,8 +137,6 @@ public class ScoringResultController {
     /**
      * 分页获取评分结果列表（仅管理员可用）
      *
-     * @param scoringResultQueryRequest
-     * @return
      */
     @PostMapping("/list/page")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -166,9 +152,6 @@ public class ScoringResultController {
     /**
      * 分页获取评分结果列表（封装类）
      *
-     * @param scoringResultQueryRequest
-     * @param request
-     * @return
      */
     @PostMapping("/list/page/vo")
     public BaseResponse<Page<ScoringResultVO>> listScoringResultVOByPage(@RequestBody ScoringResultQueryRequest scoringResultQueryRequest,
@@ -187,9 +170,6 @@ public class ScoringResultController {
     /**
      * 分页获取当前登录用户创建的评分结果列表
      *
-     * @param scoringResultQueryRequest
-     * @param request
-     * @return
      */
     @PostMapping("/my/list/page/vo")
     public BaseResponse<Page<ScoringResultVO>> listMyScoringResultVOByPage(@RequestBody ScoringResultQueryRequest scoringResultQueryRequest,
@@ -212,9 +192,6 @@ public class ScoringResultController {
     /**
      * 编辑评分结果（给用户使用）
      *
-     * @param scoringResultEditRequest
-     * @param request
-     * @return
      */
     @PostMapping("/edit")
     public BaseResponse<Boolean> editScoringResult(@RequestBody ScoringResultEditRequest scoringResultEditRequest, HttpServletRequest request) {

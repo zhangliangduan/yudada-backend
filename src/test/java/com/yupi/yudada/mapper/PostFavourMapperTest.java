@@ -12,8 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 /**
  * 帖子收藏数据库操作测试
  *
- * @author
- * @from  
+ * 
  */
 @SpringBootTest
 class PostFavourMapperTest {

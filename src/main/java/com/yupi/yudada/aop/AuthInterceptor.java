@@ -20,8 +20,6 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 权限校验 AOP
  *
- * @author
- * @from  
  */
 @Aspect
 @Component
@@ -33,9 +31,6 @@ public class AuthInterceptor {
     /**
      * 执行拦截
      *
-     * @param joinPoint
-     * @param authCheck
-     * @return
      */
     @Around("@annotation(authCheck)")
     public Object doInterceptor(ProceedingJoinPoint joinPoint, AuthCheck authCheck) throws Throwable {

@@ -8,12 +8,6 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-/**
-* @author 李鱼皮
-* @description 针对表【user_answer(用户答题记录)】的数据库操作Mapper
-* @createDate 2024-05-09 20:41:03
-* @Entity com.yupi.yudada.model.entity.UserAnswer
-*/
 public interface UserAnswerMapper extends BaseMapper<UserAnswer> {
 
     @Select("select appId, count(userId) as answerCount from user_answer\n" +

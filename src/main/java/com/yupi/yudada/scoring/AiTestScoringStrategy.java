@@ -139,10 +139,6 @@ public class AiTestScoringStrategy implements ScoringStrategy {
     /**
      * AI 评分用户消息封装
      *
-     * @param app
-     * @param questionContentDTOList
-     * @param choices
-     * @return
      */
     private String getAiTestScoringUserMessage(App app, List<QuestionContentDTO> questionContentDTOList, List<String> choices) {
         StringBuilder userMessage = new StringBuilder();
@@ -163,9 +159,6 @@ public class AiTestScoringStrategy implements ScoringStrategy {
     /**
      * 构建缓存 key
      *
-     * @param appId
-     * @param choices
-     * @return
      */
     private String buildCacheKey(Long appId, String choices) {
         return DigestUtil.md5Hex(appId + ":" + choices);

@@ -12,8 +12,6 @@ import lombok.Data;
 /**
  * 用户
  *
- * @author  
- * @from  
  */
 @TableName(value = "user")
 @Data

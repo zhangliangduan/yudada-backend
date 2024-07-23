@@ -28,8 +28,6 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * ${dataName}接口
  *
- * @author
- * @from
  */
 @RestController
 @RequestMapping("/${dataKey}")
@@ -47,9 +45,9 @@ public class ${upperDataKey}Controller {
     /**
      * 创建${dataName}
      *
-     * @param ${dataKey}AddRequest
-     * @param request
-     * @return
+      * ${dataKey}AddRequest
+      * request
+     *
      */
     @PostMapping("/add")
     public BaseResponse<Long> add${upperDataKey}(@RequestBody ${upperDataKey}AddRequest ${dataKey}AddRequest, HttpServletRequest request) {
@@ -73,9 +71,9 @@ public class ${upperDataKey}Controller {
     /**
      * 删除${dataName}
      *
-     * @param deleteRequest
-     * @param request
-     * @return
+      * deleteRequest
+      * request
+     *
      */
     @PostMapping("/delete")
     public BaseResponse<Boolean> delete${upperDataKey}(@RequestBody DeleteRequest deleteRequest, HttpServletRequest request) {
@@ -100,8 +98,8 @@ public class ${upperDataKey}Controller {
     /**
      * 更新${dataName}（仅管理员可用）
      *
-     * @param ${dataKey}UpdateRequest
-     * @return
+      * ${dataKey}UpdateRequest
+     *
      */
     @PostMapping("/update")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -127,8 +125,8 @@ public class ${upperDataKey}Controller {
     /**
      * 根据 id 获取${dataName}（封装类）
      *
-     * @param id
-     * @return
+      * id
+     *
      */
     @GetMapping("/get/vo")
     public BaseResponse<${upperDataKey}VO> get${upperDataKey}VOById(long id, HttpServletRequest request) {
@@ -143,8 +141,8 @@ public class ${upperDataKey}Controller {
     /**
      * 分页获取${dataName}列表（仅管理员可用）
      *
-     * @param ${dataKey}QueryRequest
-     * @return
+      * ${dataKey}QueryRequest
+     *
      */
     @PostMapping("/list/page")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -160,9 +158,9 @@ public class ${upperDataKey}Controller {
     /**
      * 分页获取${dataName}列表（封装类）
      *
-     * @param ${dataKey}QueryRequest
-     * @param request
-     * @return
+      * ${dataKey}QueryRequest
+      * request
+     *
      */
     @PostMapping("/list/page/vo")
     public BaseResponse<Page<${upperDataKey}VO>> list${upperDataKey}VOByPage(@RequestBody ${upperDataKey}QueryRequest ${dataKey}QueryRequest,
@@ -181,9 +179,9 @@ public class ${upperDataKey}Controller {
     /**
      * 分页获取当前登录用户创建的${dataName}列表
      *
-     * @param ${dataKey}QueryRequest
-     * @param request
-     * @return
+      * ${dataKey}QueryRequest
+      * request
+     *
      */
     @PostMapping("/my/list/page/vo")
     public BaseResponse<Page<${upperDataKey}VO>> listMy${upperDataKey}VOByPage(@RequestBody ${upperDataKey}QueryRequest ${dataKey}QueryRequest,
@@ -206,9 +204,9 @@ public class ${upperDataKey}Controller {
     /**
      * 编辑${dataName}（给用户使用）
      *
-     * @param ${dataKey}EditRequest
-     * @param request
-     * @return
+      * ${dataKey}EditRequest
+      * request
+     *
      */
     @PostMapping("/edit")
     public BaseResponse<Boolean> edit${upperDataKey}(@RequestBody ${upperDataKey}EditRequest ${dataKey}EditRequest, HttpServletRequest request) {

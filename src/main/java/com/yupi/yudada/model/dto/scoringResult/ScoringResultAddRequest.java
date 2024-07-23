@@ -11,8 +11,7 @@ import java.util.List;
 /**
  * 创建评分结果请求
  *
- * @author
- * @from  
+ * 
  */
 @Data
 public class ScoringResultAddRequest implements Serializable {

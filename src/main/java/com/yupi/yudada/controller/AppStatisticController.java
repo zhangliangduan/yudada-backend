@@ -29,8 +29,6 @@ import java.util.List;
 /**
  * App 统计分析接口
  *
- * @author  
- * @from  
  */
 @RestController
 @RequestMapping("/app/statistic")
@@ -42,8 +40,6 @@ public class AppStatisticController {
 
     /**
      * 热门应用及回答数统计（top 10）
-     *
-     * @return
      */
     @GetMapping("/answer_count")
     public BaseResponse<List<AppAnswerCountDTO>> getAppAnswerCount() {
@@ -53,8 +49,6 @@ public class AppStatisticController {
     /**
      * 某应用回答结果分布统计
      *
-     * @param appId
-     * @return
      */
     @GetMapping("/answer_result_count")
     public BaseResponse<List<AppAnswerResultCountDTO>> getAppAnswerResultCount(Long appId) {

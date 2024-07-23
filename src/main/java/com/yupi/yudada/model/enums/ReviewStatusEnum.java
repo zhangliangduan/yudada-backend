@@ -9,8 +9,6 @@ import java.util.stream.Collectors;
 /**
  * 审核状态枚举
  *
- * @author  
- * @from  
  */
 public enum ReviewStatusEnum {
 
@@ -30,8 +28,8 @@ public enum ReviewStatusEnum {
     /**
      * 根据 value 获取枚举
      *
-     * @param value
-     * @return
+      * value
+     *
      */
     public static ReviewStatusEnum getEnumByValue(Integer value) {
         if (ObjectUtil.isEmpty(value)) {
@@ -48,7 +46,7 @@ public enum ReviewStatusEnum {
     /**
      * 获取值列表
      *
-     * @return
+     *
      */
     public static List<Integer> getValues() {
         return Arrays.stream(values()).map(item -> item.value).collect(Collectors.toList());

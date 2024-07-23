@@ -12,8 +12,7 @@ import java.util.List;
 /**
  * 查询用户答案请求
  *
- * @author
- * @from  
+ * 
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

@@ -6,8 +6,6 @@ import lombok.Data;
 /**
  * 帖子收藏 / 取消收藏请求
  *
- * @author  
- * @from  
  */
 @Data
 public class PostFavourAddRequest implements Serializable {

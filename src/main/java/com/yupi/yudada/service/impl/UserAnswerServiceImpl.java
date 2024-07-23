@@ -33,8 +33,7 @@ import java.util.stream.Collectors;
 /**
  * 用户答案服务实现
  *
- * @author
- * @from  
+ * 
  */
 @Service
 @Slf4j
@@ -49,8 +48,8 @@ public class UserAnswerServiceImpl extends ServiceImpl<UserAnswerMapper, UserAns
     /**
      * 校验数据
      *
-     * @param userAnswer
-     * @param add        对创建的数据进行校验
+      * userAnswer
+      * add        对创建的数据进行校验
      */
     @Override
     public void validUserAnswer(UserAnswer userAnswer, boolean add) {
@@ -75,8 +74,8 @@ public class UserAnswerServiceImpl extends ServiceImpl<UserAnswerMapper, UserAns
     /**
      * 获取查询条件
      *
-     * @param userAnswerQueryRequest
-     * @return
+      * userAnswerQueryRequest
+     *
      */
     @Override
     public QueryWrapper<UserAnswer> getQueryWrapper(UserAnswerQueryRequest userAnswerQueryRequest) {
@@ -131,9 +130,9 @@ public class UserAnswerServiceImpl extends ServiceImpl<UserAnswerMapper, UserAns
     /**
      * 获取用户答案封装
      *
-     * @param userAnswer
-     * @param request
-     * @return
+      * userAnswer
+      * request
+     *
      */
     @Override
     public UserAnswerVO getUserAnswerVO(UserAnswer userAnswer, HttpServletRequest request) {
@@ -158,9 +157,9 @@ public class UserAnswerServiceImpl extends ServiceImpl<UserAnswerMapper, UserAns
     /**
      * 分页获取用户答案封装
      *
-     * @param userAnswerPage
-     * @param request
-     * @return
+      * userAnswerPage
+      * request
+     *
      */
     @Override
     public Page<UserAnswerVO> getUserAnswerVOPage(Page<UserAnswer> userAnswerPage, HttpServletRequest request) {

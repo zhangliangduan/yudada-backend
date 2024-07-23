@@ -34,8 +34,6 @@ import java.util.stream.Collectors;
 /**
  * 应用服务实现
  *
- * @author  
- * @from  
  */
 @Service
 @Slf4j
@@ -46,9 +44,6 @@ public class AppServiceImpl extends ServiceImpl<AppMapper, App> implements AppSe
 
     /**
      * 校验数据
-     *
-     * @param app
-     * @param add 对创建的数据进行校验
      */
     @Override
     public void validApp(App app, boolean add) {
@@ -84,8 +79,6 @@ public class AppServiceImpl extends ServiceImpl<AppMapper, App> implements AppSe
     /**
      * 获取查询条件
      *
-     * @param appQueryRequest
-     * @return
      */
     @Override
     public QueryWrapper<App> getQueryWrapper(AppQueryRequest appQueryRequest) {
@@ -138,9 +131,6 @@ public class AppServiceImpl extends ServiceImpl<AppMapper, App> implements AppSe
     /**
      * 获取应用封装
      *
-     * @param app
-     * @param request
-     * @return
      */
     @Override
     public AppVO getAppVO(App app, HttpServletRequest request) {
@@ -164,9 +154,7 @@ public class AppServiceImpl extends ServiceImpl<AppMapper, App> implements AppSe
     /**
      * 分页获取应用封装
      *
-     * @param appPage
-     * @param request
-     * @return
+     *
      */
     @Override
     public Page<AppVO> getAppVOPage(Page<App> appPage, HttpServletRequest request) {

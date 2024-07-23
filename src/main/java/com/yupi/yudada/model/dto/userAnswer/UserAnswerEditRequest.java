@@ -10,8 +10,6 @@ import java.util.List;
 /**
  * 编辑用户答案请求
  *
- * @author  
- * @from  
  */
 @Data
 public class UserAnswerEditRequest implements Serializable {

@@ -5,8 +5,6 @@ import lombok.Data;
 /**
  * 题目答案封装类（用于 AI 评分）
  *
- * @author  
- * @from  
  */
 @Data
 public class QuestionAnswerDTO {

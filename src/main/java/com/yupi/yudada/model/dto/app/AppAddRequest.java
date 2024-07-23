@@ -7,8 +7,6 @@ import java.io.Serializable;
 /**
  * 创建应用请求
  *
- * @author  
- * @from  
  */
 @Data
 public class AppAddRequest implements Serializable {

@@ -47,8 +47,8 @@ public class ${upperDataKey}ServiceImpl extends ServiceImpl<${upperDataKey}Mappe
     /**
      * 校验数据
      *
-     * @param ${dataKey}
-     * @param add      对创建的数据进行校验
+      * ${dataKey}
+      * add      对创建的数据进行校验
      */
     @Override
     public void valid${upperDataKey}(${upperDataKey} ${dataKey}, boolean add) {
@@ -70,8 +70,8 @@ public class ${upperDataKey}ServiceImpl extends ServiceImpl<${upperDataKey}Mappe
     /**
      * 获取查询条件
      *
-     * @param ${dataKey}QueryRequest
-     * @return
+      * ${dataKey}QueryRequest
+     *
      */
     @Override
     public QueryWrapper<${upperDataKey}> getQueryWrapper(${upperDataKey}QueryRequest ${dataKey}QueryRequest) {
@@ -118,9 +118,9 @@ public class ${upperDataKey}ServiceImpl extends ServiceImpl<${upperDataKey}Mappe
     /**
      * 获取${dataName}封装
      *
-     * @param ${dataKey}
-     * @param request
-     * @return
+      * ${dataKey}
+      * request
+     *
      */
     @Override
     public ${upperDataKey}VO get${upperDataKey}VO(${upperDataKey} ${dataKey}, HttpServletRequest request) {
@@ -162,9 +162,9 @@ public class ${upperDataKey}ServiceImpl extends ServiceImpl<${upperDataKey}Mappe
     /**
      * 分页获取${dataName}封装
      *
-     * @param ${dataKey}Page
-     * @param request
-     * @return
+      * ${dataKey}Page
+      * request
+     *
      */
     @Override
     public Page<${upperDataKey}VO> get${upperDataKey}VOPage(Page<${upperDataKey}> ${dataKey}Page, HttpServletRequest request) {

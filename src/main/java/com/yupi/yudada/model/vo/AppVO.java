@@ -14,8 +14,6 @@ import java.util.List;
 /**
  * 应用视图
  *
- * @author  
- * @from  
  */
 @Data
 public class AppVO implements Serializable {
@@ -93,8 +91,8 @@ public class AppVO implements Serializable {
     /**
      * 封装类转对象
      *
-     * @param appVO
-     * @return
+      * appVO
+     *
      */
     public static App voToObj(AppVO appVO) {
         if (appVO == null) {
@@ -108,8 +106,8 @@ public class AppVO implements Serializable {
     /**
      * 对象转封装类
      *
-     * @param app
-     * @return
+      * app
+     *
      */
     public static AppVO objToVo(App app) {
         if (app == null) {

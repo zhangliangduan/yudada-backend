@@ -8,8 +8,7 @@ import java.util.List;
 /**
  * 更新用户答案请求
  *
- * @author
- * @from  
+ * 
  */
 @Data
 public class UserAnswerUpdateRequest implements Serializable {

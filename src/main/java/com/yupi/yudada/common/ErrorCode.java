@@ -3,8 +3,6 @@ package com.yupi.yudada.common;
 /**
  * 自定义错误码
  *
- * @author  
- * @from  
  */
 public enum ErrorCode {
 

@@ -8,8 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 /**
  * 用户服务测试
  *
- * @author
- * @from  
+ * 
  */
 @SpringBootTest
 public class UserServiceTest {

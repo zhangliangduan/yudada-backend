@@ -44,9 +44,6 @@ public class AppController {
     /**
      * 创建应用
      *
-     * @param appAddRequest
-     * @param request
-     * @return
      */
     @PostMapping("/add")
     public BaseResponse<Long> addApp(@RequestBody AppAddRequest appAddRequest, HttpServletRequest request) {
@@ -71,9 +68,6 @@ public class AppController {
     /**
      * 删除应用
      *
-     * @param deleteRequest
-     * @param request
-     * @return
      */
     @PostMapping("/delete")
     public BaseResponse<Boolean> deleteApp(@RequestBody DeleteRequest deleteRequest, HttpServletRequest request) {
@@ -98,8 +92,6 @@ public class AppController {
     /**
      * 更新应用（仅管理员可用）
      *
-     * @param appUpdateRequest
-     * @return
      */
     @PostMapping("/update")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -125,8 +117,6 @@ public class AppController {
     /**
      * 根据 id 获取应用（封装类）
      *
-     * @param id
-     * @return
      */
     @GetMapping("/get/vo")
     public BaseResponse<AppVO> getAppVOById(long id, HttpServletRequest request) {
@@ -141,8 +131,6 @@ public class AppController {
     /**
      * 分页获取应用列表（仅管理员可用）
      *
-     * @param appQueryRequest
-     * @return
      */
     @PostMapping("/list/page")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
@@ -158,9 +146,6 @@ public class AppController {
     /**
      * 分页获取应用列表（封装类）
      *
-     * @param appQueryRequest
-     * @param request
-     * @return
      */
     @PostMapping("/list/page/vo")
     public BaseResponse<Page<AppVO>> listAppVOByPage(@RequestBody AppQueryRequest appQueryRequest,
@@ -181,9 +166,6 @@ public class AppController {
     /**
      * 分页获取当前登录用户创建的应用列表
      *
-     * @param appQueryRequest
-     * @param request
-     * @return
      */
     @PostMapping("/my/list/page/vo")
     public BaseResponse<Page<AppVO>> listMyAppVOByPage(@RequestBody AppQueryRequest appQueryRequest,
@@ -206,9 +188,6 @@ public class AppController {
     /**
      * 编辑应用（给用户使用）
      *
-     * @param appEditRequest
-     * @param request
-     * @return
      */
     @PostMapping("/edit")
     public BaseResponse<Boolean> editApp(@RequestBody AppEditRequest appEditRequest, HttpServletRequest request) {
@@ -242,9 +221,6 @@ public class AppController {
     /**
      * 应用审核
      *
-     * @param reviewRequest
-     * @param request
-     * @return
      */
     @PostMapping("/review")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)

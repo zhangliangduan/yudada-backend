@@ -9,8 +9,6 @@ import java.util.stream.Collectors;
 /**
  * App 应用类型枚举
  *
- * @author  
- * @from  
  */
 public enum AppTypeEnum {
 
@@ -29,8 +27,8 @@ public enum AppTypeEnum {
     /**
      * 根据 value 获取枚举
      *
-     * @param value
-     * @return
+      * value
+     *
      */
     public static AppTypeEnum getEnumByValue(Integer value) {
         if (ObjectUtil.isEmpty(value)) {
@@ -47,7 +45,7 @@ public enum AppTypeEnum {
     /**
      * 获取值列表
      *
-     * @return
+     *
      */
     public static List<Integer> getValues() {
         return Arrays.stream(values()).map(item -> item.value).collect(Collectors.toList());

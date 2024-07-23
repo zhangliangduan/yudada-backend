@@ -29,8 +29,7 @@ import org.springframework.util.DigestUtils;
 /**
  * 用户服务实现
  *
- * @author
- * @from  
+ * 
  */
 @Service
 @Slf4j
@@ -111,8 +110,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     /**
      * 获取当前登录用户
      *
-     * @param request
-     * @return
+      * request
+     *
      */
     @Override
     public User getLoginUser(HttpServletRequest request) {
@@ -134,8 +133,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     /**
      * 获取当前登录用户（允许未登录）
      *
-     * @param request
-     * @return
+      * request
+     *
      */
     @Override
     public User getLoginUserPermitNull(HttpServletRequest request) {
@@ -153,8 +152,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     /**
      * 是否为管理员
      *
-     * @param request
-     * @return
+      * request
+     *
      */
     @Override
     public boolean isAdmin(HttpServletRequest request) {
@@ -172,7 +171,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     /**
      * 用户注销
      *
-     * @param request
+      * request
      */
     @Override
     public boolean userLogout(HttpServletRequest request) {

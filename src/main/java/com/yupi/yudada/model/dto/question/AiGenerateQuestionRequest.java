@@ -7,8 +7,6 @@ import java.io.Serializable;
 /**
  * AI 生成题目请求
  *
- * @author  
- * @from  
  */
 @Data
 public class AiGenerateQuestionRequest implements Serializable {

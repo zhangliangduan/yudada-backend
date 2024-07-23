@@ -14,8 +14,6 @@ import java.util.List;
 /**
  * 评分结果视图
  *
- * @author  
- * @from  
  */
 @Data
 public class ScoringResultVO implements Serializable {
@@ -78,8 +76,8 @@ public class ScoringResultVO implements Serializable {
     /**
      * 封装类转对象
      *
-     * @param scoringResultVO
-     * @return
+      * scoringResultVO
+     *
      */
     public static ScoringResult voToObj(ScoringResultVO scoringResultVO) {
         if (scoringResultVO == null) {
@@ -94,8 +92,8 @@ public class ScoringResultVO implements Serializable {
     /**
      * 对象转封装类
      *
-     * @param scoringResult
-     * @return
+      * scoringResult
+     *
      */
     public static ScoringResultVO objToVo(ScoringResult scoringResult) {
         if (scoringResult == null) {

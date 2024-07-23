@@ -33,8 +33,7 @@ import java.util.stream.Collectors;
 /**
  * 题目服务实现
  *
- * @author
- * @from  
+ * 
  */
 @Service
 @Slf4j
@@ -49,8 +48,8 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question> i
     /**
      * 校验数据
      *
-     * @param question
-     * @param add      对创建的数据进行校验
+      * question
+      * add      对创建的数据进行校验
      */
     @Override
     public void validQuestion(Question question, boolean add) {
@@ -75,8 +74,8 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question> i
     /**
      * 获取查询条件
      *
-     * @param questionQueryRequest
-     * @return
+      * questionQueryRequest
+     *
      */
     @Override
     public QueryWrapper<Question> getQueryWrapper(QuestionQueryRequest questionQueryRequest) {
@@ -111,9 +110,9 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question> i
     /**
      * 获取题目封装
      *
-     * @param question
-     * @param request
-     * @return
+      * question
+      * request
+     *
      */
     @Override
     public QuestionVO getQuestionVO(Question question, HttpServletRequest request) {
@@ -138,9 +137,9 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question> i
     /**
      * 分页获取题目封装
      *
-     * @param questionPage
-     * @param request
-     * @return
+      * questionPage
+      * request
+     *
      */
     @Override
     public Page<QuestionVO> getQuestionVOPage(Page<Question> questionPage, HttpServletRequest request) {

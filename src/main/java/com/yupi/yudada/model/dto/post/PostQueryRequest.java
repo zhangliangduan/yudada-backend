@@ -9,8 +9,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 查询请求
  *
- * @author
- * @from  
+ * 
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

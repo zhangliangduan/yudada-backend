@@ -24,10 +24,6 @@ public class ScoringStrategyContext {
     /**
      * 评分
      *
-     * @param choiceList
-     * @param app
-     * @return
-     * @throws Exception
      */
     public UserAnswer doScore(List<String> choiceList, App app) throws Exception {
         AppTypeEnum appTypeEnum = AppTypeEnum.getEnumByValue(app.getAppType());

@@ -6,8 +6,6 @@ import com.yupi.yudada.model.entity.User;
 /**
  * 用户数据库操作
  *
- * @author  
- * @from  
  */
 public interface UserMapper extends BaseMapper<User> {
 

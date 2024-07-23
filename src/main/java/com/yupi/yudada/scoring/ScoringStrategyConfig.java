@@ -14,13 +14,13 @@ public @interface ScoringStrategyConfig {
 
     /**
      * 应用类型
-     * @return
+     *
      */
     int appType();
 
     /**
      * 评分策略
-     * @return
+     *
      */
     int scoringStrategy();
 }

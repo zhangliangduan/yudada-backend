@@ -8,8 +8,7 @@ import org.apache.commons.lang3.ObjectUtils;
 /**
  * 用户角色枚举
  *
- * @author
- * @from  
+ * 
  */
 public enum UserRoleEnum {
 
@@ -29,7 +28,7 @@ public enum UserRoleEnum {
     /**
      * 获取值列表
      *
-     * @return
+     *
      */
     public static List<String> getValues() {
         return Arrays.stream(values()).map(item -> item.value).collect(Collectors.toList());
@@ -38,8 +37,8 @@ public enum UserRoleEnum {
     /**
      * 根据 value 获取枚举
      *
-     * @param value
-     * @return
+      * value
+     *
      */
     public static UserRoleEnum getEnumByValue(String value) {
         if (ObjectUtils.isEmpty(value)) {
